@@ -1,9 +1,9 @@
 <?php 
 ////////////////////////////////////////////////
-// Developed by Muhammad Al-Jilani    //
-// Email: admin@aljup.com                 //
-// Release Date: 2021/08/20               //
-// Version: 1.0                                   //
+// Developed by Muhammad Al-Jilani           //
+// Email: admin@aljup.com                    //
+// Release Date: 2021/08/20                  //
+// Version: 1.0                              //
 ///////////////////////////////////////////////
 
 include('config.php'); 
