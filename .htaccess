@@ -1,0 +1,10 @@
+RewriteEngine on
+
+# Remove .php (or htm) from visible URL (permanent redirect)
+RewriteCond %{REQUEST_URI} ^/(.+)\.php?$ [nocase]
+RewriteRule ^ /%1 [L,R=301]
+
+# Quietly point back to the HTML file (temporary/undefined redirect):
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [END]
