@@ -57,6 +57,7 @@
                         <span class="btn btn-secondary my-2">مرات الفحص
                             <?php echo $details->completed_requests; ?></span>
                     </p>
+                    <p><img id="home" src="flags/4x3/<?php echo strtolower("$details->country_code"); ?>.svg"></p>
 
                 </div>
             </div>
@@ -76,7 +77,7 @@
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center">دولته
                                         <span class="badge bg-success rounded-pill"><?php echo $details->country; ?>
-                                            ,<span><?php echo $details->country_code; ?> <img id="home" src="flags/4x3/<?php echo strtolower("$details->country_code"); ?>.svg"></span></span>
+                                            ,<span><?php echo $details->country_code; ?></span></span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center">مدينته
                                         <span class="badge bg-success rounded-pill c1"><?php echo $details->city; ?></span>
